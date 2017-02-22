@@ -1,0 +1,81 @@
+
+// nuevo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	int opcion,a,b,area1,area2,area3;
+    float pi=3.1416,r,p; 
+	
+	
+		cout<<"    ========== MENU ==========    "<<endl;
+		cout<<"1.- Calcular el area de un cuadrado: "<<endl;
+		cout<<"2.- Calcular el area de un triangulo: "<<endl;
+		cout<<"3.- Calcular el area de un circulo: "<<endl;
+		cout<<"4.- Salir del programa: "<<endl;
+		cout<<endl;
+		cout<<"Que opcion desea realizar? "<<endl;
+		cin>> opcion;
+
+        switch(opcion)
+		{
+
+		case 1:
+		{
+			cout<<"Ingrese los valores de los lados: "<<endl;
+			cin>> p;
+
+			area1=pow(p,2);
+
+			cout<<"El area es: "<<area1<<endl;
+		
+			break;
+		}
+
+		case 2:
+
+		{
+			cout<<"Ingrese el valor de la base y altura: "<<endl;
+			cin>> a;
+			cin>> b;
+
+			area2=(a*b)/2;
+			
+			cout<<"El area es: "<<area2<<endl;
+			break;
+		}
+
+		case 3:
+
+		{
+			cout<<"Ingrese el valor de radio: "<<endl;
+			cin>> r;
+
+			area3= pi*pow(r,2);
+
+			cout<<"El area es: "<<area3<<endl;
+			break;
+		}
+		
+		case 4:
+
+		{
+           cout<<"Saliendo de Menu..."<<endl;
+		   break;
+		}
+
+		default: {cout<<"opcion invalida";
+			     }
+     }
+	
+	
+	
+	getch();
+}
