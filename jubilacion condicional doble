@@ -1,0 +1,42 @@
+//jubilacion
+
+
+#include "stdafx.h"
+#include  "conio.h"
+#include  <iostream>
+
+using namespace std;
+void main ()
+{
+	int x,e,n;
+		cout<<"genero masculino ingrese 1,de lo contrario 2 : "<<endl;
+		cin>>x;
+
+		if(x==1)
+		{  
+			cout<<"ingrese su edad: "<<endl;
+			cin>>e;
+			 
+			if (e>=65)
+			 cout<<"se puede retirar:"<<endl;
+			else 
+			 cout<<"no se puede retirar"<<endl;
+
+		}
+
+		if(x==2)
+		{ 
+			cout<<"ingrese su edad: "<<endl;
+			cin>>e;
+			cout<<"ingrese la cantidad de hijos"<<endl;
+			cin>>n;
+
+			if(e+n>=60)
+			cout<<"se puede retirar:"<<endl;
+		    else 
+			 cout<<"no se puede retirar"<<endl;
+		}
+
+       getch();
+
+}
