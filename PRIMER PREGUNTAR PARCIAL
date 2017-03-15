@@ -1,0 +1,45 @@
+// examen_parcial1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"	
+#include <iostream>
+
+using namespace std;
+int  prestamo_( int a, int b, int c, int d);
+
+void main()
+{
+	int sueldo,historial,moroso,hipoteca,result;
+	cout<<"ingrese su sueldo: "<<endl;
+	cin>>sueldo;
+	cout<<"Tiene ustd historial? YES=1 , NO=: "<<endl;
+	cin>>historial;
+	cout<<"Es ustd moroso? YES=1, NO=2: "<<endl;
+	cin>>moroso;
+	cout<<"valor de su sueldo que es destinado a la hipoteca: "<<endl;
+	cin>>hipoteca;
+
+	result=prestamo_(sueldo,historial,moroso,hipoteca);
+	cout<<"el resultado es: "<<result<<endl;
+
+	getch();
+}
+    int  prestamo_( int a, int b, int c, int d)
+	{
+		int riesgo;
+		
+		if((b==1 && c==1) || (d>a*0.30)){
+			riesgo=1;
+		return(riesgo);
+	
+		
+		if((b==0 && d<a*0.20 )|| (b=1 && c==0 && d<a*0.30))
+			riesgo=2;
+		return(riesgo);}
+		
+		else 
+			riesgo=3;
+		return(riesgo);
+	}
+
