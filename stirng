@@ -1,0 +1,66 @@
+// jkjk.cpp : Defines the entry point for the console application.
+//
+#include "conio.h"
+#include <iostream>
+#include "stdafx.h"
+#include <string>
+
+using namespace std;
+
+
+void main()
+{
+	int opcion,longitud;
+	string var1,var2,nombre,compare;
+
+
+	cout<<"=======MENU======="<<endl;
+	cout<<"1.-getline"<<endl;
+	cout<<"2.-lenght"<<endl;
+	cout<<"3.-compare"<<endl;
+	cout<<"4.-numero de vocales"<<endl;
+	cout<<"5.-sacar parte del string"<<endl;
+	cout<<"6.-intercambiar string"<<endl;
+	cout<<"7.-ejemplo caracteres de string"<<endl;
+	cout<<"8.-ejemplo invertir frase"<<endl;
+	cout<<"9.-ejemplo quitar vocales"<<endl;
+	cout<<"0.-salir"<<endl;
+	cin>>opcion;
+
+	switch(opcion)
+	{
+	case 1:
+		cout<<"Ingrese un nombre: ";
+		getline(cin,nombre);
+		break;
+	case 2:
+		cout<<"ingrese un nombre"<<endl;
+		getline(cin,nombre);
+		longitud=nombre.length();
+		cout<<"la longitud es: "<<longitud;
+		break;
+	case 3:
+		cout<<"ingrese un nombre: ";
+		getline(cin,nombre);
+		cout<<"ingrese segundo nombre: ";
+		getline(cin,var1);
+		if (nombre.compare(var1)==0)
+			cout<<"los datos coinciden";
+		else 
+			cout<<"no son los mismos datos";
+		break;
+	}
+	getch();
+}
+int numeroVocales (string var1)
+{
+	int cont=0, longitud;
+	string var1;
+	cout<<"ingrese palabra: ";
+	getline(cin,var1);
+	longitud=var1.length();
+	for (int i=0; i<=longitud; i++)
+	{
+		if(var1[i]
+
+
